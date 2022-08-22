@@ -1,10 +1,12 @@
 import { Router, Request, Response, NextFunction } from 'express'
 import itemsRouter from './items.routes'
+import locationRouter from './locations.routes'
 
 const routes = Router()
 
 
 routes.use('/items', itemsRouter)
+routes.use('/location', locationRouter)
 
 export default routes
 
