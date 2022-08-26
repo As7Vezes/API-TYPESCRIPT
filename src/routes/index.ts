@@ -5,7 +5,7 @@ import locationRouter from './locations.routes'
 const routes = Router()
 
 
-routes.use('/items', itemsRouter)
+routes.use('/', itemsRouter)
 routes.use('/location', locationRouter)
 
 export default routes
